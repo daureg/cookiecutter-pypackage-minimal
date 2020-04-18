@@ -1,6 +1,6 @@
 .*
 !.gitignore
 !.pre-commit-config.yaml
-__pycache__/ 
+__pycache__/
 dist/
 _build/
