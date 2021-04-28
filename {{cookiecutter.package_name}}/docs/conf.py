@@ -10,6 +10,5 @@ release = "{{ cookiecutter.package_version }}"
 
 extensions = ["sphinx.ext.autodoc", "sphinx_autodoc_typehints", "sphinx.ext.napoleon"]
 html_theme = "alabaster"
-html_static_path = ["_static"]
 napoleon_google_docstring = True
 intersphinx_mapping = {"python": ("https://docs.python.org/3", None)}

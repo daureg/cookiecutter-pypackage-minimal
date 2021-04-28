@@ -1,2 +1,5 @@
+import pytest
+
+
 def test_pass():
-    assert False, "Write some unit test!"
+    pytest.fail("Write some unit test!")

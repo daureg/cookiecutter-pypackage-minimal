@@ -9,7 +9,7 @@ help:
 .PHONY: help Makefile
 
 api:
-	poetry run sphinx-apidoc -M -f -o doc/source {{ cookiecutter.package_name }}
+	poetry run sphinx-apidoc -M -f -o docs/source {{ cookiecutter.package_name }}
 
 format:
 	poetry run pyupgrade --py38-plus $(git ls-files **/*.py)
