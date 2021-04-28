@@ -58,17 +58,22 @@ the build:
 
 .. code:: bash
 
-    poetry run python3 -m flake8
+    make lint
 
 *  Format the source code with `black <https://black.readthedocs.io/en/stable/>`_
 
 .. code:: bash
 
-    poetry run black .
+    make format
+
+*  Check types with `mypy <http://mypy-lang.org/>`_ and `pytype <https://google.github.io/pytype/>`_
+
+.. code:: bash
+
+    make types
 
 *  Run unit tests (it create a coverage report in ``coverage/index.html``)
 
 .. code:: bash
 
-    poetry run python3 -m pytest --cov=modelbuilder --cov-branch
-    poetry run coverage html -d coverage
+    make check
